@@ -1,6 +1,6 @@
 # 🚀 My First Simple SaaS Project
   
-This is my first self-built "simple" SaaS application, fully constructed with mainstream full-stack development tools, integrating user authentication, calendar third-party API docking, and subscription payment capabilities. The whole project is a complete end-to-end small SaaS product developed for technical practice.
+This is my first self-built simple SaaS application, fully constructed with mainstream full-stack development tools, integrating user authentication, calendar third-party API docking, and subscription payment capabilities. The whole project is a complete end-to-end small SaaS product developed for technical practice.
   
 ## 📸 Project Screenshots
 ![alt text](<screenshots/Screenshot 2026-07-08 093442.png>)
@@ -96,11 +96,3 @@ pnpm dev
   
 > [!TIP]
 > Right-click the friend in the sidebar to copy email or unfriend.
-  
-  
----
-✨ Built with Next.js & passion | Made for learning & scaling SaaS workflows
-
-### Usage
-Copy all content above completely, paste into a new blank file and save as `readme.txt`.
-All segment spacing follows your requirement: two line breaks between each large section.
