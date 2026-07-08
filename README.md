@@ -1,6 +1,6 @@
 # 🚀 My First Simple SaaS Project
   
-This is my first self-built simple SaaS application, fully constructed with mainstream full-stack development tools, integrating user authentication, calendar third-party API docking, and subscription payment capabilities. The whole project is a complete end-to-end small SaaS product developed for technical practice.
+This is my first self-built simple SaaS application, realtime Google calendar syncing system, integrating user authentication, calendar third-party API docking, and subscription payment capabilities. The whole project is a complete end-to-end small SaaS product developed for technical practice, protect time purpose.
   
 ## 📸 Project Screenshots
 ![alt text](<screenshots/Screenshot 2026-07-08 093442.png>)
@@ -25,12 +25,10 @@ This is my first self-built simple SaaS application, fully constructed with main
 - **Google Calendar API** 📅 – Official Google open API, realize user calendar authorization binding, event creation, query, edit and synchronization logic
 - **Stripe** 💰 – Global subscription payment gateway, process user monthly recurring subscription checkout, payment status webhook callback and membership permission control
   
-  
 ## 🌟 Core Features & Client Interaction (Code-Derived Logic)
 All interaction logic below is extracted and sorted according to the actual business code of the project:
 1. User identity system powered by Supabase
    - One-click Google account login + email account registration/login, automatic session persistence
-   - Sidebar friend contact list module, right-click context menu built-in copy friend email and one-click unfriend operation
    - Global user identity state monitoring, automatic jump to login page for unauthenticated access
 2. Google Calendar third-party docking flow
    - OAuth authorization pop-up to obtain user calendar read/write permissions
@@ -45,7 +43,6 @@ All interaction logic below is extracted and sorted according to the actual busi
    - Global shared data managed through React Context to avoid redundant props layer-by-layer transmission
    - Real-time page data refresh after user operation such as adding calendar events, purchasing membership, deleting contacts
   
-  
 ## 📚 Key Technical Learnings From Building This Project
 1. Standardized use of React Context and component state
    - Distinguish local component useState and global Context state application scenarios
@@ -57,7 +54,6 @@ All interaction logic below is extracted and sorted according to the actual busi
    - `window.location.href`: Pure client-side native JS jump, suitable for external links or simple page jump without routing cache
    - App Router native `redirect()`: Client component navigation, integrates Next routing cache and prefetch, internal page jump priority choice
    - `NextResponse.redirect()`: Only available in middleware / server actions / route handlers, server-side forced redirect, used for login interception, permission interception scenarios
-  
   
 ## 📈 Future Improvement Roadmap
 1. Functional optimization: Custom dedicated event operation buttons
@@ -76,7 +72,6 @@ All interaction logic below is extracted and sorted according to the actual busi
    - Loading skeleton UI, error fallback prompt page for network failure, API authorization failure, subscription overdue abnormal scenarios
    - Centralized error toast notification system to feedback operation results to users
   
-  
 ## ⚙️ Project Startup Guide
 ### 1️⃣ Environment setup
 ```bash
@@ -93,6 +88,3 @@ Fill all required secret keys inside `.env.local`:
 ```bash
 pnpm dev
 ```
-  
-> [!TIP]
-> Right-click the friend in the sidebar to copy email or unfriend.
