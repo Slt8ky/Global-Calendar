@@ -7,6 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/sonner"
 import { TimeProvider } from "@/lib/context/TimerProvider";
 import { EventsProvider } from "@/lib/context/EventsProvider";
+import { Suspense } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,7 +40,9 @@ export default function RootLayout({
             <AuthListener />
             <TimeProvider>
               <EventsProvider>
-                {children}
+                <Suspense>
+                  {children}
+                </Suspense>
               </EventsProvider>
             </TimeProvider>
             <Toaster />
