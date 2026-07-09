@@ -15,7 +15,7 @@ const handleLogin = async () => {
         provider: 'google',
         options: {
             scopes: 'https://www.googleapis.com/auth/calendar.readonly https://www.googleapis.com/auth/calendar https://www.googleapis.com/auth/calendar.app.created https://www.googleapis.com/auth/calendar.calendarlist https://www.googleapis.com/auth/calendar.calendarlist.readonly',
-            redirectTo: `https://${window.location.origin}/auth/callback`,
+            redirectTo: `${window.location.origin}/auth/callback`,
             queryParams: {
                 access_type: 'offline',
                 prompt: 'consent'
