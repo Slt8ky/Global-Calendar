@@ -1,10 +1,10 @@
 'use client';
 
-import { createClient } from "@/utils/supabase/client";
 import { UserData } from "@/lib/types";
-import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useEffect, useState } from "react";
+import { createClient } from "@/utils/supabase/client";
 import axios from "axios";
-import { redirect, useSearchParams, useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
+import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useEffect, useState } from "react";
 
 const AuthContext = createContext<{ user: UserData | null, setUser: Dispatch<SetStateAction<UserData | null>> } | null>(null);
 

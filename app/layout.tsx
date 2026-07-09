@@ -35,19 +35,19 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <TooltipProvider>
-          <AuthProvider>
-            <AuthListener />
-            <TimeProvider>
-              <EventsProvider>
-                <Suspense>
+        <Suspense>
+          <TooltipProvider>
+            <AuthProvider>
+              <AuthListener />
+              <TimeProvider>
+                <EventsProvider>
                   {children}
-                </Suspense>
-              </EventsProvider>
-            </TimeProvider>
-            <Toaster />
-          </AuthProvider>
-        </TooltipProvider>
+                </EventsProvider>
+              </TimeProvider>
+              <Toaster />
+            </AuthProvider>
+          </TooltipProvider>
+        </Suspense>
       </body>
     </html>
   );
